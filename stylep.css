@@ -1,0 +1,157 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Red Hat Display', sans-serif;;
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    display: grid;
+    place-items: center;
+}
+
+.card{
+    background-color: white;
+    border-radius: 35px;
+    max-width: 400px;
+    margin-right: 500px;
+    margin-left: 500px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px 0px ;
+}
+
+.card-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body{
+    text-align: center;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 35px;
+    color:hsl(223, 47%, 23%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 16px;
+    color:hsl(224, 23%, 55%);
+    line-height: 1.8;
+    padding: 2px 8px 2px 8px;
+}
+
+.plan-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5px;
+    gap: 1px;
+}
+
+.change{
+    color: blue;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 100px;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: .65em;
+    margin-bottom: 1.5em;
+  }
+.btn {
+    all: unset;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: 700;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding: 1em;
+  }
+.btn:focus {
+    /* Provide a fallback style for browsers
+       that don't support :focus-visible */
+    outline: 3px dashed  hsl(223, 47%, 23%);
+  }
+.payment-btn {
+    background: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    opacity: 1;
+    transition: all .2s ease;
+  }
+.payment-btn:hover {
+    opacity: .8;
+  }
+  
+.cancel-btn {
+    color:hsl(223, 47%, 23%)
+    ;
+    transition: color .2s ease;
+  }
+  
+.cancel-btn:hover {
+    color: hsl(224, 23%, 55%);
+  }
+
+a {
+    font-weight: 900;
+}
